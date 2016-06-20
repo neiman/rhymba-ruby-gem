@@ -10,7 +10,7 @@ Gem::Specification.new do |spec|
   spec.email         = ["info@vlgroup.com"]
   spec.summary       = %q{A Ruby wrapper for the Rhymba API}
   spec.description   = %q{A Ruby wrapper for the Rhymba API}
-  spec.homepage      = "https://github.com/vlgroup"
+  spec.homepage      = "https://github.com/vlgroup/rhymba-ruby-gem"
   spec.license       = "MIT"
 
   spec.files         = `git ls-files -z`.split("\x0")
