@@ -35,7 +35,7 @@ module Rhymba
       def search_album(options={})
         throw ArgumentError.new("Required arguments $format missing") if options["$format"].nil?
         throw ArgumentError.new("Required arguments $top missing") if options["$top"].nil?  
-        throw ArgumentError.new("Required arguments $select missing") if options["$select"].nil?        
+        throw ArgumentError.new("Required arguments $select missing") if options["$select"].nil?
         options[:attachments] = options[:attachments].to_json if Hash === options[:attachments]
         options = options.merge(access_token: self.access_token) 
         get("Albums()", options)
@@ -75,7 +75,8 @@ module Rhymba
       def search_media(options={})
         throw ArgumentError.new("Required arguments $format missing") if options["$format"].nil?
         throw ArgumentError.new("Required arguments $top missing") if options["$top"].nil?
-        throw ArgumentError.new("Required arguments $select missing") if options["$select"].nil?         
+        throw ArgumentError.new("Required arguments $select missing") if options["$select"].nil?
+                
         options[:attachments] = options[:attachments].to_json if Hash === options[:attachments]
         options = options.merge(access_token: self.access_token) 
         

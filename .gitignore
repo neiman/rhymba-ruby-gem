@@ -27,6 +27,17 @@
 *.sql
 *.sqlite
 
+# directories 
+############
+coverage
+tmp
+
+# randoms #
+#############
+.config
+Gemfile.lock
+
+
 # OS generated files #
 ######################
 .DS_Store

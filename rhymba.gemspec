@@ -9,7 +9,7 @@ Gem::Specification.new do |spec|
   spec.authors       = ["neiman.wong"]
   spec.email         = ["info@vlgroup.com"]
   spec.summary       = %q{A Ruby wrapper for the Rhymba API}
-  spec.description   = %q{A Ruby wrapper for the Rhymba API}
+  spec.description   = %q{A Ruby wrapper for VL Group Rhymba API}
   spec.homepage      = "https://github.com/vlgroup/rhymba-ruby-gem"
   spec.license       = "MIT"
 

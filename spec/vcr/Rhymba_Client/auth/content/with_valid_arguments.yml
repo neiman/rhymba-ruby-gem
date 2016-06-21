@@ -1,0 +1,46 @@
+---
+http_interactions:
+- request:
+    method: post
+    uri: https://dispatch.mcnemanager.com/current/token.create
+    body:
+      encoding: UTF-8
+      string: bitrate=128&encoding=%27mp3%27&fadeEnd=0&fadeStart=0&https=true&mediaId=17004125&method=GetStream&mono=false&protocol=%27http%27&trimEnd=0&trimStart=0&ttl=180&use_limit=100
+    headers:
+      Accept:
+      - application/json; charset=utf-8
+      User-Agent:
+      - Rhymba Ruby Gem 0.0.1
+      Access-Token:
+      - "<ACCESS_TOKEN>"
+      Access-Secret:
+      - "<ACCESS_SECRET>"
+      Content-Type:
+      - application/x-www-form-urlencoded
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Cache-Control:
+      - private
+      Content-Type:
+      - application/json; charset=utf-8
+      Server:
+      - Microsoft-IIS/8.5
+      X-Aspnet-Version:
+      - 4.0.30319
+      X-Powered-By:
+      - ASP.NET
+      Date:
+      - Tue, 21 Jun 2016 21:15:58 GMT
+      Content-Length:
+      - '305'
+    body:
+      encoding: UTF-8
+      string: '{"access_token":"<ACCESS_TOKEN>_8cb7b2fef3a826933306d808559832353970f32f409126ab4d7d981abf64b0be","access_hint":"","access_req":"NjM2MDIxNDA1NTg4MDI4NzcxOkdldFN0cmVhbToxODA6MTAwOmJpdHJhdGU6ZW5jb2Rpbmc6ZmFkZUVuZDpmYWRlU3RhcnQ6aHR0cHM6bWVkaWFJZDptb25vOnByb3RvY29sOnRyaW1FbmQ6dHJpbVN0YXJ0"}'
+    http_version: 
+  recorded_at: Tue, 21 Jun 2016 21:15:52 GMT
+recorded_with: VCR 3.0.3

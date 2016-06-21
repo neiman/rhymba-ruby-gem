@@ -1,0 +1,47 @@
+---
+http_interactions:
+- request:
+    method: get
+    uri: https://search.mcnemanager.com/current/content.odata/Media()?$format=json&$select=id,title,artist_name&$top=4&access_token=<ACCESS_TOKEN>&keyword=rick%20springfield
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      Accept:
+      - application/json; charset=utf-8
+      User-Agent:
+      - Rhymba Ruby Gem 0.0.1
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Cache-Control:
+      - no-cache
+      Content-Length:
+      - '419'
+      Content-Type:
+      - application/json;odata=minimalmetadata;streaming=true;charset=utf-8
+      Server:
+      - Microsoft-IIS/8.5
+      X-Content-Type-Options:
+      - nosniff
+      Dataserviceversion:
+      - 3.0;
+      X-Aspnet-Version:
+      - 4.0.30319
+      X-Powered-By:
+      - ASP.NET
+      Date:
+      - Tue, 21 Jun 2016 20:58:41 GMT
+    body:
+      encoding: UTF-8
+      string: '{"odata.metadata":"https://search.mcnemanager.com/current/content.odata/$metadata#Media&$select=id,title,artist_name","value":[{"id":17004125,"title":"Starlight,
+        Starbright","artist_name":"Rick Springfield"},{"id":49931641,"title":"Starlight,
+        Starbright","artist_name":"Rick Springfield"},{"id":47076111,"title":"Down","artist_name":"Rick
+        Springfield"},{"id":47076113,"title":"Found","artist_name":"Rick Springfield"}]}'
+    http_version: 
+  recorded_at: Tue, 21 Jun 2016 20:58:42 GMT
+recorded_with: VCR 3.0.3

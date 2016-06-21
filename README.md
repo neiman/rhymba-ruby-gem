@@ -19,16 +19,21 @@ Or install it yourself as:
 
 ## Documentation
 
+[![Build Status](https://travis-ci.org/vlgroup/rhymba-ruby-gem.svg?branch=master)](https://travis-ci.org/vlgroup/rhymba-ruby-gem)
+[![Coverage Status](https://coveralls.io/repos/github/vlgroup/rhymba-ruby-gem/badge.svg?branch=master)](https://coveralls.io/github/vlgroup/rhymba-ruby-gem?branch=master)
+
+See more here: http://documentation.vlgroup.com/
+
 ## Usage
 
 ```ruby
 require "rhymba"
 
 Rhymba.configure do |config|
-  config.token = "YOUR_TOKEN"
+  config.access_token = "YOUR_ACCESS_TOKEN"
+  config.access_secret = "YOUR_SECRET_TOKEN"
 end
 
-Rhymba.auth_test
 ```
 
 ## Examples

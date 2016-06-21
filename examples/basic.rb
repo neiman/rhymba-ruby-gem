@@ -2,9 +2,9 @@ require "rhymba"
 require "yaml"
 
 
-access_token = ENV["TOKEN"] || (print "Token: "; gets.strip)
-secret_token = ENV["TOKEN"] || (print "Token: "; gets.strip)
-client = Rhymba::Client.new access_token: access_token, secret_token: secret_token
+access_token = ENV["ACCESS_TOKEN"] || (print "Access_Token: "; gets.strip)
+access_secret = ENV["ACCESS_SECRET"] || (print "ACCESS_SECRET: "; gets.strip)
+client = Rhymba::Client.new access_token: access_token, access_secret: access_secret
 
 puts "Search"
 puts
