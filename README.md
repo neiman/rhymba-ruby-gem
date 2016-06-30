@@ -18,9 +18,8 @@ Or install it yourself as:
     $ gem install rhymba-api
 
 ## Documentation
+[![Gem Version](https://badge.fury.io/rb/rhymba-api.svg)](https://badge.fury.io/rb/rhymba-api)
 
-[![Build Status](https://travis-ci.org/vlgroup/rhymba-ruby-gem.svg?branch=master)](https://travis-ci.org/vlgroup/rhymba-ruby-gem)
-[![Coverage Status](https://coveralls.io/repos/github/vlgroup/rhymba-ruby-gem/badge.svg?branch=master)](https://coveralls.io/github/vlgroup/rhymba-ruby-gem?branch=master)
 
 See more here: http://documentation.vlgroup.com/
 
@@ -29,15 +28,17 @@ See more here: http://documentation.vlgroup.com/
 ```ruby
 require "rhymba"
 
-Rhymba.configure do |config|
-  config.access_token = "YOUR_ACCESS_TOKEN"
-  config.access_secret = "YOUR_SECRET_TOKEN"
-end
+access_token = ENV["ACCESS_TOKEN"] || (print "ACCESS_TOKEN: "; gets.strip)
+access_secret = ENV["ACCESS_SECRET"] || (print "ACCESS_SECRET: "; gets.strip)
+client = Rhymba::Client.new access_token: access_token, access_secret: access_secret
+
+puts "Search Media"
+@media = client.search_media("$format" => "json","$top" => "4","keyword" => "rick springfield","$select" => "id,title,artist_name,bitrate")
+
+puts "Get Stream Auth Token"
+@auth = client.auth_token_content(:method => "GetStream", :ttl => 180, :mediaId => "#{@media["value"][0]["id"]}".to_i, :use_limit => 100, :bitrate => 128, :encoding => "'mp3'", :fadeEnd => 0, :fadeStart => 0, :https => "true",:mono => "false", :protocol => "'http'", :trimEnd => 0, :trimStart => 0)
 
 ```
-
-## Examples
-
 
 ## Contributing
 
