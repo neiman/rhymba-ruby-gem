@@ -19,8 +19,8 @@ Or install it yourself as:
 
 ## Documentation
 [![Gem Version](https://badge.fury.io/rb/rhymba-api.svg)](https://badge.fury.io/rb/rhymba-api)
-[![Build Status](https://travis-ci.org/vlgroup/rhymba-ruby-gem.svg?branch=master)](https://travis-ci.org/vlgroup/rhymba-ruby-gem)
-[![Coverage Status](https://coveralls.io/repos/github/vlgroup/rhymba-ruby-gem/badge.svg?branch=master)](https://coveralls.io/github/vlgroup/rhymba-ruby-gem?branch=master)
+[![Build Status](https://travis-ci.org/vlgroup/Rhymba-music-api-ruby-gem.svg?branch=master)](https://travis-ci.org/vlgroup/rhymba-ruby-gem)
+
 
 
 See more here: http://documentation.vlgroup.com/
