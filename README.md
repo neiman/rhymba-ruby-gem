@@ -1,9 +1,21 @@
-# Rhymba
+<p align="center">
+  <a href="http://vlgroup.com/">
+    <img alt="VLGroup" src="http://cuspmagazine.com/wp-content/uploads/2016/03/Header-VL-group.jpg" width="546">
+  </a>
+</p>
+<p align="center">
+[![Gem Version](https://badge.fury.io/rb/rhymba-api.svg)](https://badge.fury.io/rb/rhymba-api)
+[![Build Status](https://travis-ci.org/vlgroup/Rhymba-music-api-ruby-gem.svg?branch=master)](https://travis-ci.org/vlgroup/rhymba-ruby-gem)
 
+At VL Group, we specialize in creating unique, integrated digital experiences through the combined powers of music + technology.
 
-A Ruby wrapper for the Rhymba API
+### Rhymba API
 
-## Installation
+VL Group's Rhymba platform is a series of REST-like APIs and endpoints designed to make integrating music downloads, streaming, previews, and artwork into your site or service as easy and efficient as possible. Using OData-based URL structures and returning JSON or XML, Rhymba allows you to search for content, request specific content, deliver it in a variety of ways, and more, in a scalable and lightning-fast manner, regardless of your server-side programming language. You can also query Rhymba using client-side Javascript, from within Flash-based applications, or within mobile applications for usage across a variety of non-traditional applications. Sign up for access [here](http://rhymbamanager.vervelife.com/apisignup).
+
+We've developed a Ruby wrapper for our Rhymba music API.
+
+### Installation
 
 Add this line to your application's Gemfile:
 
@@ -17,15 +29,11 @@ Or install it yourself as:
 
     $ gem install rhymba-api
 
-## Documentation
-[![Gem Version](https://badge.fury.io/rb/rhymba-api.svg)](https://badge.fury.io/rb/rhymba-api)
-[![Build Status](https://travis-ci.org/vlgroup/Rhymba-music-api-ruby-gem.svg?branch=master)](https://travis-ci.org/vlgroup/rhymba-ruby-gem)
-
-
+### Documentation
 
 See more here: http://documentation.vlgroup.com/
 
-## Usage
+### Usage
 
 ```ruby
 require "rhymba"
@@ -42,7 +50,7 @@ puts "Get Stream Auth Token"
 
 ```
 
-## Contributing
+### Contributing
 
 1. Fork it ( http://github.com/vlgroup )
 2. Create your feature branch (`git checkout -b my-new-feature`)
