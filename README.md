@@ -1,6 +1,6 @@
 <p align="center">
   <a href="http://vlgroup.com/">
-    <img alt="VLGroup" src="http://cuspmagazine.com/wp-content/uploads/2016/03/Header-VL-group.jpg" width="546">
+    <img alt="VLGroup" src="https://github.com/Rhymba-music-api-ruby-gem/assets/VLGroup_Full.png" width="546">
   </a>
 </p>
 <p align="center">
