@@ -1,6 +1,6 @@
 <p align="center">
   <a href="http://vlgroup.com/">
-    <img alt="VLGroup" src="https://github.com/Rhymba-music-api-ruby-gem/assets/VLGroup_Full.png" width="546">
+    <img alt="VLGroup" src="https://github.com/smrlbrgh/Rhymba-music-api-ruby-gem" width="546">
   </a>
 </p>
 <p align="center">
