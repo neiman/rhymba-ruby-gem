@@ -10,9 +10,10 @@
 At VL Group, we specialize in creating unique, integrated digital experiences through the combined powers of music + technology.
 
 ### Rhymba API
+
 VL Group's Rhymba platform is a series of REST-like APIs and endpoints designed to make integrating music downloads, streaming, previews, and artwork into your site or service as easy and efficient as possible. Using OData-based URL structures and returning JSON or XML, Rhymba allows you to search for content, request specific content, deliver it in a variety of ways, and more, in a scalable and lightning-fast manner, regardless of your server-side programming language. You can also query Rhymba using client-side Javascript, from within Flash-based applications, or within mobile applications for usage across a variety of non-traditional applications. Sign up for access [here](http://rhymbamanager.vervelife.com/apisignup).
 
-A Ruby wrapper for the Rhymba API
+We've developed a Ruby wrapper for our Rhymba music API.
 
 ### Installation
 
@@ -29,9 +30,6 @@ Or install it yourself as:
     $ gem install rhymba-api
 
 ### Documentation
-
-
-
 
 See more here: http://documentation.vlgroup.com/
 
